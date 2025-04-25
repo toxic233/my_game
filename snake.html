@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/games.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <a href="./index.html" class="back-button">
+                <i class="material-icons">arrow_back</i>
+            </a>
+            <h1>贪吃蛇</h1>
+            <div class="score-display">
+                分数: <span id="score">0</span>
+            </div>
+        </header>
+
+        <main>
+            <canvas id="game-canvas" width="300" height="300"></canvas>
+        </main>
+
+        <div class="game-controls">
+            <div class="start-btn-container">
+                <button id="start-btn" class="material-button">
+                    <i class="material-icons">play_arrow</i> 开始游戏
+                </button>
+            </div>
+            <div class="direction-buttons">
+                <button id="up-btn" class="material-button circle">
+                    <i class="material-icons">arrow_upward</i>
+                </button>
+                <div>
+                    <button id="left-btn" class="material-button circle">
+                        <i class="material-icons">arrow_back</i>
+                    </button>
+                    <button id="right-btn" class="material-button circle">
+                        <i class="material-icons">arrow_forward</i>
+                    </button> 
+                </div>
+                <button id="down-btn" class="material-button circle">
+                    <i class="material-icons">arrow_downward</i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/games/snake.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>俄罗斯方块</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/games.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <a href="./index.html" class="back-button">
+                <i class="material-icons">arrow_back</i>
+            </a>
+            <h1>俄罗斯方块</h1>
+            <div class="game-info">
+                <div class="info-box">
+                    <span>分数:</span>
+                    <span id="score">0</span>
+                </div>
+                <div class="info-box">
+                    <span>等级:</span>
+                    <span id="level">1</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="tetris-main">
+            <div class="tetris-grid" id="game-board">
+                <!-- 游戏板将通过JS生成 -->
+            </div>
+
+            <div class="tetris-sidepanel">
+                <div class="next-piece">
+                    <h3>下一个:</h3>
+                    <div id="next-piece"></div>
+                </div>
+                <div class="controls">
+                    <button id="rotate-btn" class="material-button">
+                        <i class="material-icons">rotate_right</i> 旋转
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <div class="game-controls">
+            <div class="start-btn-container">
+                <button id="start-btn" class="material-button primary">
+                    <i class="material-icons">play_arrow</i> 开始游戏
+                </button>
+            </div>
+            <div class="direction-buttons">
+                <button id="left-btn" class="material-button circle">
+                    <i class="material-icons">arrow_back</i>
+                </button>
+                <button id="down-btn" class="material-button circle">
+                    <i class="material-icons">arrow_downward</i>
+                </button>
+                <button id="right-btn" class="material-button circle">
+                    <i class="material-icons">arrow_forward</i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/games/tetris.js"></script>
+</body>
+</html>

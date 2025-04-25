@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>迷你游戏合集</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="time-display" id="current-time"></div>
+            <h1>休闲小游戏</h1>
+        </header>
+
+        <main class="game-selection">
+            <div class="game-card" id="tictactoe">
+                <i class="material-icons game-icon">apps</i>
+                <span>井字棋</span>
+            </div>
+            <div class="game-card" id="snake">
+                <i class="material-icons game-icon">gamepad</i>
+                <span>贪吃蛇</span>
+            </div>
+            <div class="game-card" id="tetris">
+                <i class="material-icons game-icon">view_carousel</i>
+                <span>俄罗斯方块</span>
+            </div>
+            <div class="game-card" id="pacman">
+                <i class="material-icons game-icon">videogame_asset</i>
+                <span>吃豆人</span>
+            </div>
+        </main>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/time.js"></script>
+</body>
+</html>
